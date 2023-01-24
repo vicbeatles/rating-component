@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: hsl(213, 19%, 18%);
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 25px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.star-image {
+    border-radius: 25px;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    background-image: url("/images/icon-star.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 50px;
+}
+
+.rating-title h1 {
+
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.rating-text {
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.rating-score {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.score {
+    color: hsl(217, 12%, 63%);
+    width: 50px;
+    height: 50px;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+}
+
+.score:hover {
+
+    background-color: hsl(25, 97%, 53%);
+    color:white;
+    cursor: pointer;
+}
+
+.score:active {
+    background-color: white;
+    color: black;
+}
+
+.active-score {
+    color: white;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating-submit {
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.rating-submit:hover {
+
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.dis-none {
+    display: none;
+}
+
+.return-image {
+
+    background-image: url("/images/illustration-thank-you.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 50%;
+    align-self: center;
+
+} 
+
+.return-value {
+    width: 50%;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    color:hsl(25, 97%, 53%);
+    border-radius: 20px;
+    padding: 10px;
+    align-self: center;
+}
+
+.score-return {
+
+    text-align: center;
+}
+
+.return-thanks {
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+@media screen and (orientation: landscape) and (max-height: 768px) {
+    .main-container {
+        
+        width: 50vh;
+        height: 50vh;       
+        
+    }
+}
